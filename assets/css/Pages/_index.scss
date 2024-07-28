@@ -210,8 +210,9 @@ body {
     }
 
     .shadow {
-        box-shadow: 0px 0px 60px rgba(233, 18, 32, 0.773);
+        box-shadow: 0px 0px 60px #b43941c5;
     }
+
 }
 
 section {
@@ -254,11 +255,49 @@ section {
     }
 }
 
+.link23 {
+    width: 390.5px;
+    height: 32px;
+    background-image: url('./../image/link2_3.png');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.link34 {
+    background-image: url('./../image/link3_4.png');
+    height: 32px;
+    width: 390.5px;
+}
+
+.link67 {
+    background-image: url('./../image/link6_7.png');
+    // height: 32px;
+    // width: 390.5px;
+}
+// .link45 {
+//     background-image: url('./../image/link4_5.png');
+//     height: 32px;
+//     width: 390.5px;
+// }
+
 .link {
-    max-width: 390.5px;
-    img {
-        object-fit: cover;
-    }
+    // position: relative;
+    // background-color: yellow;
+    // max-width: 390.5px;
+    width: 390.5px;
+   
+
+    // @include media('min') {
+    //     margin-top: -14px;
+    //     margin-bottom: -10px;
+    //     z-index: -3;
+    // }
+    // img {
+    //     width: 100%;
+    //     height: 99%;
+    //     object-fit: cover;
+    // }
 }
 
 .second_v {
@@ -274,6 +313,7 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     // z-index: 1;
+    margin-bottom: -1px;
 
     img {
         animation: bounce; /* referring directly to the animation's @keyframe declaration */
@@ -354,6 +394,9 @@ section {
     padding-left: 51px;
     padding-right: 51px;
     padding-bottom: 26.2px;
+
+    margin-bottom: -1px;
+    margin-top: -2px;
     .top {
         margin-bottom: 10px;
     }
@@ -511,6 +554,9 @@ section {
     height: 100px; /* Adjust as needed */
     position: relative;
     overflow: hidden;
+    align-items: center;
+    margin-top: -1px;
+    margin-bottom: -1px;
     .shape {
       position: absolute;
       width: 100%;
@@ -519,7 +565,7 @@ section {
     
     .top {
       background-color: #FFFFFF; /* White color */
-      clip-path: polygon(0 0, 50% 50%, 100% 0);
+      clip-path: polygon(0 -1%, 50% 50%, 100% -1%);
       z-index: 3;
     }
     
@@ -531,7 +577,7 @@ section {
     
     .bottom {
       background-color: #feecf1; /* Darker pink color */
-      clip-path: polygon(0 10%, 50% 60%, 100% 10%, 100% 100%, 0 100%);
+      clip-path: polygon(0 10%, 50% 60%, 100% 10%, 100% 101%, 0 101%);
       z-index: 1;
     }
   }
@@ -605,7 +651,7 @@ section {
     justify-content: flex-start;
     padding-top: 37px;
     margin-top: -4px;
-    height: 300px;
+    height: auto;
     width: 100%;
     h2 {
         color: #EA97B0;
