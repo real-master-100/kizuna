@@ -200,15 +200,17 @@ transform: translate(0, 0);
 }
 
 body {
-    // background-color: aqua;
-    background-color: #FEECF1;
+    background-color: #e58aa3;
     display: flex;
     justify-content: center;
 
     .rest {
         background-color: #7EBAE4;
-        // width: 100%;
         height: auto;
+    }
+
+    .shadow {
+        box-shadow: 0px 0px 60px rgba(233, 18, 32, 0.773);
     }
 }
 
@@ -218,16 +220,13 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    @include media('sp') {
-        overflow: hidden;
-    }
+    overflow: hidden;
 }
 
 .fv {
     width: auto;
     display: flex;
     flex-direction: column;
-    
     .bg {
         width: 100%;
         height: 441.51px;
@@ -236,8 +235,6 @@ section {
         background-color: #76B5E1;
         text-align: center;
         padding-top: 48.9px;
-        // margin-bottom: -100px;
-        z-index: 100;
     }
     
     .text {
@@ -253,9 +250,6 @@ section {
             font-size: 32px;
             margin-bottom: 6px;
             line-height: 1.2;
-
-            animation: bounce; /* referring directly to the animation's @keyframe declaration */
-            animation-duration: 2s;
         }
     }
 }
@@ -279,7 +273,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    z-index: 103;
+    // z-index: 1;
 
     img {
         animation: bounce; /* referring directly to the animation's @keyframe declaration */
@@ -447,6 +441,7 @@ section {
     display: flex;
     flex-direction: column;
     position: relative;
+    // z-index: -1;
 
     // &:after {
     //     content: '';
@@ -534,11 +529,11 @@ section {
       z-index: 2;
     }
     
-    // .bottom {
-    //   background-color: #FFE6E6; /* Darker pink color */
-    //   clip-path: polygon(0 66%, 100% 66%, 100% 100%, 0 100%);
-    //   z-index: 1;
-    // }
+    .bottom {
+      background-color: #feecf1; /* Darker pink color */
+      clip-path: polygon(0 10%, 50% 60%, 100% 10%, 100% 100%, 0 100%);
+      z-index: 1;
+    }
   }
   
 

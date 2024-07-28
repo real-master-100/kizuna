@@ -637,7 +637,7 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 0;
   margin: 0;
   font-family: "Maru";
@@ -1288,13 +1288,16 @@ header #hamburger.active span:nth-child(3) {
 }
 
 body {
-  background-color: #FEECF1;
+  background-color: #e58aa3;
   display: flex;
   justify-content: center;
 }
 body .rest {
   background-color: #7EBAE4;
   height: auto;
+}
+body .shadow {
+  box-shadow: 0px 0px 60px rgba(233, 18, 32, 0.773);
 }
 
 section {
@@ -1303,11 +1306,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media only screen and (max-width: 768px) {
-  section {
-    overflow: hidden;
-  }
+  overflow: hidden;
 }
 
 .fv {
@@ -1323,7 +1322,6 @@ section {
   background-color: #76B5E1;
   text-align: center;
   padding-top: 48.9px;
-  z-index: 100;
 }
 .fv .text {
   width: 100%;
@@ -1339,8 +1337,6 @@ section {
   font-size: 32px;
   margin-bottom: 6px;
   line-height: 1.2;
-  animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s;
 }
 
 .link {
@@ -1363,7 +1359,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  z-index: 103;
 }
 .second_v img {
   animation: bounce; /* referring directly to the animation's @keyframe declaration */
@@ -1536,6 +1531,12 @@ section {
   -webkit-clip-path: polygon(0 0, 0 10%, 50% 60%, 100% 10%, 100% 0);
           clip-path: polygon(0 0, 0 10%, 50% 60%, 100% 10%, 100% 0);
   z-index: 2;
+}
+.shape-container .bottom {
+  background-color: #feecf1; /* Darker pink color */
+  -webkit-clip-path: polygon(0 10%, 50% 60%, 100% 10%, 100% 100%, 0 100%);
+          clip-path: polygon(0 10%, 50% 60%, 100% 10%, 100% 100%, 0 100%);
+  z-index: 1;
 }
 
 .sixth_v {
@@ -1757,14 +1758,22 @@ section {
 
 footer {
   background-color: #EA97B0;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 390px;
+  height: 80px;
+  z-index: 1000;
 }
 footer div {
   color: #FFFFFF;
+  background-color: #f32160;
   background: url("./../image/footer/bg.png");
   background-repeat: no-repeat;
   background-position: left 30.6px top 10.7px;
-  width: 390px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
   align-items: center;
   position: relative;
   display: flex;

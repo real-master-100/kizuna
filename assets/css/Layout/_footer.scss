@@ -1,18 +1,30 @@
 footer {
     background-color: #EA97B0;
     // margin-top: 167rem;
+
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 390px;
+    height: 80px;
+    z-index: 1000;
     div {
         color: #FFFFFF;
+        background-color: #f32160;
         background: url("./../image/footer/bg.png") ;
         background-repeat: no-repeat;
         background-position: left 30.6px top 10.7px;
-        width: 390px;
-        height: 80px;
+        width: 100%;
+        height: 100%;
         align-items: center;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
+        // position: fixed;
+        // bottom: 50px;
 
         h4 {
             font-size: 17px;
