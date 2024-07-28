@@ -1,6 +1,38 @@
 footer {
+    background-color: #EA97B0;
     // margin-top: 167rem;
+    div {
+        color: #FFFFFF;
+        background: url("./../image/footer/bg.png") ;
+        background-repeat: no-repeat;
+        background-position: left 30.6px top 10.7px;
+        width: 390px;
+        height: 80px;
+        align-items: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        h4 {
+            font-size: 17px;
+        }
+
+        .btn {
+            position: absolute;
+            right: 21px;
+            background-color: #FFFFFF;
+            width: 23.5px;
+            height: 23.5px;
+            border-radius: 50%;
+        }
+
+        img {
+            position: absolute;
+            top: 10.7px;
+            left: 30.6px;
+        }
+    }
     // @include media('sp') {
     //     margin-top: 67rem;
     // }
@@ -65,99 +97,100 @@ footer {
     //             }
     //         }
     //     }
-    }
+    // }
 
-    ._bottom {
-        background-color: #F5F5F5;
+    // ._bottom {
+    //     background-color: #F5F5F5;
 
-        .wrap {
-            .sns {
-                margin: 73rem 0;
-                padding-left: 110rem;
-                font-size: 30rem;
+    //     .wrap {
+    //         .sns {
+    //             margin: 73rem 0;
+    //             padding-left: 110rem;
+    //             font-size: 30rem;
 
-                i {
-                    margin: 0 10rem;
-                }
+    //             i {
+    //                 margin: 0 10rem;
+    //             }
 
-                @include media('sp') {
-                    margin: 35rem 0;
-                    padding-left: 0;
-                    text-align: center;
-                }
-            }
+    //             @include media('sp') {
+    //                 margin: 35rem 0;
+    //                 padding-left: 0;
+    //                 text-align: center;
+    //             }
+    //         }
 
-            h3 {
-                font-size: 32rem;
+    //         h3 {
+    //             font-size: 32rem;
 
-                @include media('sp') {
-                    text-align: center;
-                }
-            }
+    //             @include media('sp') {
+    //                 text-align: center;
+    //             }
+    //         }
 
-            p.txt {
-                font-size: 20rem;
-                line-height: 35rem;
-                margin-top: 8rem;
+    //         p.txt {
+    //             font-size: 20rem;
+    //             line-height: 35rem;
+    //             margin-top: 8rem;
 
-                @include media('sp') {
-                    margin-top: 18rem;
-                    text-align: center;
-                }
-            }
+    //             @include media('sp') {
+    //                 margin-top: 18rem;
+    //                 text-align: center;
+    //             }
+    //         }
 
-            ul {
-                font-size: 20rem;
-                line-height: 35rem;
-                display: grid;
-                grid-template-columns: auto;
-                gap: 18rem;
-                position: relative;
-                padding-left: 28rem;
+    //         ul {
+    //             font-size: 20rem;
+    //             line-height: 35rem;
+    //             display: grid;
+    //             grid-template-columns: auto;
+    //             gap: 18rem;
+    //             position: relative;
+    //             padding-left: 28rem;
 
-                &::before {
-                    height: 100%;
-                    width: 1px;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    content: '';
-                    background: $text_color;
-                }
+    //             &::before {
+    //                 height: 100%;
+    //                 width: 1px;
+    //                 position: absolute;
+    //                 left: 0;
+    //                 top: 0;
+    //                 content: '';
+    //                 background: $text_color;
+    //             }
 
-                @include media('sp') {
-                    margin-top: 66rem;
-                }
-            }
+    //             @include media('sp') {
+    //                 margin-top: 66rem;
+    //             }
+    //         }
 
-            .copyright {
-                margin-top: 126rem;
+    //         .copyright {
+    //             margin-top: 126rem;
 
-                @include media('sp') {
-                    margin-top: 66rem;
-                }
+    //             @include media('sp') {
+    //                 margin-top: 66rem;
+    //             }
 
-                padding-bottom: 60rem;
-                font-size: 20rem;
-                line-height: 35rem;
-            }
-        }
-    }
+    //             padding-bottom: 60rem;
+    //             font-size: 20rem;
+    //             line-height: 35rem;
+    //         }
+    //     }
+    // }
 
-    ._logo {
-        margin-top: auto;
+    // ._logo {
+    //     margin-top: auto;
 
-        @include media('sp') {
-            text-align: center;
-            padding-top: 80rem;
-        }
+    //     @include media('sp') {
+    //         text-align: center;
+    //         padding-top: 80rem;
+    //     }
 
-        img {
-            width: 311rem;
-        }
+    //     img {
+    //         width: 311rem;
+    //     }
 
-        p {
-            margin-top: 12rem;
-            font-size: 18rem;
-        }
-    }
+    //     p {
+    //         margin-top: 12rem;
+    //         font-size: 18rem;
+    //     }
+    // }
+}

@@ -1313,7 +1313,6 @@ section {
   width: 100%;
   height: 234px;
   text-align: center;
-  font-family: "Natsuzemi Maru Gothic";
   background: url("./../image/link_a.png");
   background-size: cover;
   color: #ffffff;
@@ -1718,91 +1717,35 @@ section {
   color: #EA97B0;
 }
 
-._bottom {
-  background-color: #F5F5F5;
+footer {
+  background-color: #EA97B0;
 }
-._bottom .wrap .sns {
-  margin: 73rem 0;
-  padding-left: 110rem;
-  font-size: 30rem;
-}
-._bottom .wrap .sns i {
-  margin: 0 10rem;
-}
-@media only screen and (max-width: 768px) {
-  ._bottom .wrap .sns {
-    margin: 35rem 0;
-    padding-left: 0;
-    text-align: center;
-  }
-}
-._bottom .wrap h3 {
-  font-size: 32rem;
-}
-@media only screen and (max-width: 768px) {
-  ._bottom .wrap h3 {
-    text-align: center;
-  }
-}
-._bottom .wrap p.txt {
-  font-size: 20rem;
-  line-height: 35rem;
-  margin-top: 8rem;
-}
-@media only screen and (max-width: 768px) {
-  ._bottom .wrap p.txt {
-    margin-top: 18rem;
-    text-align: center;
-  }
-}
-._bottom .wrap ul {
-  font-size: 20rem;
-  line-height: 35rem;
-  display: grid;
-  grid-template-columns: auto;
-  gap: 18rem;
+footer div {
+  color: #FFFFFF;
+  background: url("./../image/footer/bg.png");
+  background-repeat: no-repeat;
+  background-position: left 30.6px top 10.7px;
+  width: 390px;
+  height: 80px;
+  align-items: center;
   position: relative;
-  padding-left: 28rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-._bottom .wrap ul::before {
-  height: 100%;
-  width: 1px;
+footer div h4 {
+  font-size: 17px;
+}
+footer div .btn {
   position: absolute;
-  left: 0;
-  top: 0;
-  content: "";
-  background: #55483E;
+  right: 21px;
+  background-color: #FFFFFF;
+  width: 23.5px;
+  height: 23.5px;
+  border-radius: 50%;
 }
-@media only screen and (max-width: 768px) {
-  ._bottom .wrap ul {
-    margin-top: 66rem;
-  }
-}
-._bottom .wrap .copyright {
-  margin-top: 126rem;
-  padding-bottom: 60rem;
-  font-size: 20rem;
-  line-height: 35rem;
-}
-@media only screen and (max-width: 768px) {
-  ._bottom .wrap .copyright {
-    margin-top: 66rem;
-  }
-}
-
-._logo {
-  margin-top: auto;
-}
-@media only screen and (max-width: 768px) {
-  ._logo {
-    text-align: center;
-    padding-top: 80rem;
-  }
-}
-._logo img {
-  width: 311rem;
-}
-._logo p {
-  margin-top: 12rem;
-  font-size: 18rem;
+footer div img {
+  position: absolute;
+  top: 10.7px;
+  left: 30.6px;
 }/*# sourceMappingURL=style.css.map */
