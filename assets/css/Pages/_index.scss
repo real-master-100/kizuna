@@ -668,3 +668,62 @@ section {
         }
     }
 }
+
+.ninth_v {
+    padding: 50px 51px 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    img {
+        margin-bottom: 45.3px;
+        align-self: center;
+    }
+
+
+    .fourteen {
+        font-size: 14px;
+        line-height: 1.714;
+    }
+    .twelve {
+        font-size: 12px;
+        line-height: 2;
+    }
+    
+    p {
+        align-self: flex-start;
+    }
+    p.com_name {
+        margin-left: 16px;
+        position: relative;
+        margin-bottom: 6px;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: #89C3EB;
+            top: 0px;
+        }
+    }
+
+    p.com_intro {
+        margin-bottom: 10px;
+    }
+
+    a.com_url {
+        margin-bottom: 25px;
+    }
+    .last {
+        margin-bottom: 55px;
+    }
+
+    .pink {
+        display: inline-flex;
+        width: 110%;
+    }
+    .pink > span {
+        color: #EA97B0;
+    }
+}
