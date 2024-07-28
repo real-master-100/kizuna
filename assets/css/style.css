@@ -1539,7 +1539,7 @@ section {
 .sixth_v .parag .text .subtitle h2 {
   color: #EA97B0;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.625;
 }
 .sixth_v .parag .text .content p {
   font-size: 14px;
@@ -1689,6 +1689,7 @@ section {
   margin-left: 16px;
   position: relative;
   margin-bottom: 6px;
+  display: inline-flex;
 }
 .ninth_v p.com_name::before {
   position: absolute;
@@ -1697,7 +1698,8 @@ section {
   height: 9px;
   border-radius: 50%;
   background-color: #89C3EB;
-  top: 0px;
+  top: 8px;
+  left: -13px;
 }
 .ninth_v p.com_intro {
   margin-bottom: 10px;
@@ -1716,105 +1718,44 @@ section {
   color: #EA97B0;
 }
 
-footer {
-  margin-top: 167rem;
-}
-@media only screen and (max-width: 768px) {
-  footer {
-    margin-top: 67rem;
-  }
-}
-footer ._top {
-  position: relative;
-}
-footer ._top::before {
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  height: 255rem;
-  position: absolute;
-  background-color: #F5F5F5;
-  content: "";
-}
-footer ._top .wrap_rl {
-  position: relative;
-}
-footer ._top .wrap_rl ._left {
-  display: flex;
-  flex-direction: column;
-}
-footer ._top .wrap_rl ._left ._contact {
-  font-size: 28rem;
-  line-height: 35rem;
-  padding-bottom: 50rem;
-}
-footer ._top .wrap_rl ._left ._contact h2 {
-  padding-bottom: 24rem;
-  margin-bottom: 35rem;
-  position: relative;
-}
-footer ._top .wrap_rl ._left ._contact h2::before {
-  content: "";
-  width: 37rem;
-  height: 1rem;
-  background: #55483E;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-footer ._top .wrap_rl ._left ._contact a {
-  font-size: 62rem;
-}
-@media print, screen and (min-width: 769px) {
-  footer ._top .wrap_rl ._left ._contact a {
-    pointer-events: none;
-  }
-}
-footer ._top .wrap_rl ._left ._contact a i {
-  margin-right: 20rem;
-}
-footer ._top .wrap_rl ._left ._contact p {
-  margin-top: 20rem;
-  font-size: 28rem;
-}
-footer ._bottom {
+._bottom {
   background-color: #F5F5F5;
 }
-footer ._bottom .wrap .sns {
+._bottom .wrap .sns {
   margin: 73rem 0;
   padding-left: 110rem;
   font-size: 30rem;
 }
-footer ._bottom .wrap .sns i {
+._bottom .wrap .sns i {
   margin: 0 10rem;
 }
 @media only screen and (max-width: 768px) {
-  footer ._bottom .wrap .sns {
+  ._bottom .wrap .sns {
     margin: 35rem 0;
     padding-left: 0;
     text-align: center;
   }
 }
-footer ._bottom .wrap h3 {
+._bottom .wrap h3 {
   font-size: 32rem;
 }
 @media only screen and (max-width: 768px) {
-  footer ._bottom .wrap h3 {
+  ._bottom .wrap h3 {
     text-align: center;
   }
 }
-footer ._bottom .wrap p.txt {
+._bottom .wrap p.txt {
   font-size: 20rem;
   line-height: 35rem;
   margin-top: 8rem;
 }
 @media only screen and (max-width: 768px) {
-  footer ._bottom .wrap p.txt {
+  ._bottom .wrap p.txt {
     margin-top: 18rem;
     text-align: center;
   }
 }
-footer ._bottom .wrap ul {
+._bottom .wrap ul {
   font-size: 20rem;
   line-height: 35rem;
   display: grid;
@@ -1823,7 +1764,7 @@ footer ._bottom .wrap ul {
   position: relative;
   padding-left: 28rem;
 }
-footer ._bottom .wrap ul::before {
+._bottom .wrap ul::before {
   height: 100%;
   width: 1px;
   position: absolute;
@@ -1833,34 +1774,35 @@ footer ._bottom .wrap ul::before {
   background: #55483E;
 }
 @media only screen and (max-width: 768px) {
-  footer ._bottom .wrap ul {
+  ._bottom .wrap ul {
     margin-top: 66rem;
   }
 }
-footer ._bottom .wrap .copyright {
+._bottom .wrap .copyright {
   margin-top: 126rem;
   padding-bottom: 60rem;
   font-size: 20rem;
   line-height: 35rem;
 }
 @media only screen and (max-width: 768px) {
-  footer ._bottom .wrap .copyright {
+  ._bottom .wrap .copyright {
     margin-top: 66rem;
   }
 }
-footer ._logo {
+
+._logo {
   margin-top: auto;
 }
 @media only screen and (max-width: 768px) {
-  footer ._logo {
+  ._logo {
     text-align: center;
     padding-top: 80rem;
   }
 }
-footer ._logo img {
+._logo img {
   width: 311rem;
 }
-footer ._logo p {
+._logo p {
   margin-top: 12rem;
   font-size: 18rem;
 }/*# sourceMappingURL=style.css.map */

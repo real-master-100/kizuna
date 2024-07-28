@@ -520,7 +520,7 @@ section {
                 h2 {
                     color: #EA97B0;
                     font-size: 16px;
-                    line-height: 1;
+                    line-height: 1.625;
                 }
             }
             .content {
@@ -697,6 +697,7 @@ section {
         margin-left: 16px;
         position: relative;
         margin-bottom: 6px;
+        display: inline-flex;
         &::before {
             position: absolute;
             content: "";
@@ -704,7 +705,8 @@ section {
             height: 9px;
             border-radius: 50%;
             background-color: #89C3EB;
-            top: 0px;
+            top: 8px;
+            left: -13px;
         }
     }
 
