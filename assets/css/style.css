@@ -1271,6 +1271,22 @@ header #hamburger.active span:nth-child(3) {
   transform: translateY(-50%) rotate(135deg);
 }
 
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+.fadein {
+  opacity: 0;
+  transition: all 1.5s;
+  transform: translate(0, 100px);
+}
+
+.fadein.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 body {
   background-color: #FEECF1;
   display: flex;
@@ -1316,13 +1332,15 @@ section {
   background: url("./../image/link_a.png");
   background-size: cover;
   color: #ffffff;
-  z-index: 99;
+  z-index: 101;
 }
 .fv .text p {
   text-shadow: #76B5E1, 0, 3, 6px;
   font-size: 32px;
   margin-bottom: 6px;
   line-height: 1.2;
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
 }
 
 .link {
@@ -1346,6 +1364,10 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   z-index: 103;
+}
+.second_v img {
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
 }
 .second_v p {
   line-height: 1.3;
@@ -1492,13 +1514,28 @@ section {
   margin-bottom: 0px;
   margin-right: 6.3px;
 }
-.fivth_v:after {
-  position: absolute;
-  background-color: red;
+.shape-container {
   width: 100%;
-  height: 50px;
-  -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-          clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+  height: 100px; /* Adjust as needed */
+  position: relative;
+  overflow: hidden;
+}
+.shape-container .shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.shape-container .top {
+  background-color: #FFFFFF; /* White color */
+  -webkit-clip-path: polygon(0 0, 50% 50%, 100% 0);
+          clip-path: polygon(0 0, 50% 50%, 100% 0);
+  z-index: 3;
+}
+.shape-container .middle {
+  background-color: #EA97B0; /* Light pink color */
+  -webkit-clip-path: polygon(0 0, 0 10%, 50% 60%, 100% 10%, 100% 0);
+          clip-path: polygon(0 0, 0 10%, 50% 60%, 100% 10%, 100% 0);
+  z-index: 2;
 }
 
 .sixth_v {
@@ -1607,6 +1644,7 @@ section {
   translate: 47px 50%;
 }
 .eighth_v .msg div p {
+  font-size: 16px;
   text-align: center;
   color: #FFFFFF;
   line-height: 1;
