@@ -67,18 +67,22 @@ body {
             display: flex;
             flex-direction: column;
             gap: 26.4px;
+            a {
+                display: flex;
+                align-items: center;
+                font-size: 22px;
+                line-height: 1.772;
+                color: #505050;
+    
+                // &:hover {
+                //     color: #DE89A3;
+                // }
+                span {
+                    font-size: 18px;
+                };
+            }
         }
     
-        a {
-            display: flex;
-            align-items: center;
-            font-size: 22px;
-            line-height: 1.772;
-            color: #505050;
-            span {
-                font-size: 18px;
-            };
-        }
 
         .top_anchor {
             display: flex;
@@ -474,7 +478,7 @@ section {
     width: 100%;
     
     h2 {
-        color: #EA97B0;
+        color: #505050;
         font-size: 32px;
     }
 }
@@ -570,7 +574,6 @@ section {
                 }
                 &>.btn>img:hover {
                     cursor: pointer;
-
                 }
             }
 
