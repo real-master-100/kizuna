@@ -1708,7 +1708,6 @@ section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
 }
 .eighth_v .hundred > div .question > div.content {
   display: flex;
@@ -1731,6 +1730,7 @@ section {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  margin-top: 20px;
 }
 .eighth_v .hundred > div .answer img {
   margin-right: 10px;
