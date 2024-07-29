@@ -1749,6 +1749,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 80px;
 }
 .ninth_v img {
   margin-bottom: 45.3px;
@@ -1798,11 +1799,20 @@ section {
   color: #EA97B0;
 }
 
-.rest_f, .rest_s {
+.rest_f {
+  z-index: -9;
+  position: fixed;
+  top: 50px;
+  left: 20px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: calc(50vw - 390.5px);
+  align-items: center;
+}
+.rest_f + div {
+  height: 100vh;
+  background-color: red;
+}
+.rest_f .rest_md {
+  width: 390.5px;
 }
 
 footer {
