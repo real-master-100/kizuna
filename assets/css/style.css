@@ -1355,6 +1355,22 @@ section {
 
 .link67 {
   background-image: url("./../image/link6_7.png");
+  width: 390.5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 37px;
+  margin-top: -1px;
+  margin-bottom: -2px;
+}
+
+.link89 {
+  background-image: url(./../image/link8_9.png);
+  height: 65px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: -2px;
+  margin-top: -2px;
 }
 
 .link {
@@ -1502,6 +1518,7 @@ section {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: -2px;
 }
 .fivth_v p.title {
   font-size: 23px;
@@ -1532,7 +1549,7 @@ section {
   position: relative;
   overflow: hidden;
   align-items: center;
-  margin-top: -1px;
+  margin-top: -3px;
   margin-bottom: -1px;
 }
 .shape-container .shape {
@@ -1617,6 +1634,7 @@ section {
   justify-content: flex-start;
   padding-top: 37px;
   margin-top: -4px;
+  margin-bottom: -2px;
   height: auto;
   width: 100%;
 }
@@ -1631,6 +1649,7 @@ section {
   align-items: center;
   background-color: #DBEDF9;
   padding-bottom: 32px;
+  padding-top: 3px;
 }
 .eighth_v h5 {
   color: #505050;
