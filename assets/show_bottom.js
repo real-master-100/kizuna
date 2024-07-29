@@ -1,11 +1,11 @@
-
   $(document).ready(function() {
-    var scrollTimeout;
-    $(window).scroll(function() {
-      clearTimeout(scrollTimeout);
-      $('footer').hide();
-      scrollTimeout = setTimeout(function() {
-        $('footer').fadeIn();
-      }, 1000); // Adjust the delay time as needed
+    $('footer').hide(); 
+
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop() === 0) {
+        $('footer').fadeOut();
+      } else {
+        $('footer').fadeIn(1000); // Display with fade effect
+      }
     });
   });
