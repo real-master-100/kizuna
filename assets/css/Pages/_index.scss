@@ -41,12 +41,18 @@ body {
         position: fixed;
         display: flex;
         flex-direction: column;
+        gap: 62.1px;
         align-items: center;     
+        bottom: 0px;
+        @include media('lb') {
+            display: none;
+        }
     }
-
+    
     .right_layout {
         position: fixed;
-        right: 0px;
+        top: calc(50vh - 116px);
+        right: calc((50vw - 447.3px) / 2);
         display: flex;
         flex-direction: column;
         
@@ -672,6 +678,21 @@ section {
             }
         }
     }
+}
+
+#wrap_right {
+    width: calc(50vw - 195.25px);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#wrap_left {
+    width: calc(50vw - 195.25px);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 // .rest {
