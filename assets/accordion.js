@@ -13,8 +13,12 @@
 //   });
 
 $(document).ready(function() {
+  $(".answer").css("display", "none");
+
+
     $(".btn").click(function() {
       var $answer = $(this).closest(".fadein").find(".answer");
+      
       $answer.slideToggle("slow");
       
       var $closeImage = $(this).closest(".fadein").find(".close");
