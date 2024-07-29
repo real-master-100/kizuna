@@ -47,6 +47,9 @@ body {
         @include media('lb') {
             display: none;
         }
+        &:nth-child(2) {
+            width: 64%;
+        }
     }
     
     .right_layout {
@@ -77,10 +80,15 @@ body {
         }
 
         .top_anchor {
-            p {
-                position: fixed;
-                bottom: 32px;
-                right: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            position: fixed;
+
+            bottom: 32px;
+            right: 40px;
+            a {
                 font-size: 14px;
                 color: #DE89A3;
             }
@@ -109,6 +117,7 @@ section {
         background-color: #76B5E1;
         text-align: center;
         padding-top: 48.9px;
+        z-index: 100;
     }
     
     .text {
@@ -439,6 +448,7 @@ section {
 
     .right {
         margin-left: -49px;
+        margin-right: 21px;
     }
     .parag.left {
         margin-left: 21px;

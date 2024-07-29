@@ -1144,6 +1144,9 @@ body .left_layout {
     display: none;
   }
 }
+body .left_layout:nth-child(2) {
+  width: 64%;
+}
 body .right_layout {
   position: fixed;
   top: calc(50vh - 116px);
@@ -1171,10 +1174,16 @@ body .right_layout a {
 body .right_layout a span {
   font-size: 18px;
 }
-body .right_layout .top_anchor p {
+body .right_layout .top_anchor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
   position: fixed;
   bottom: 32px;
   right: 40px;
+}
+body .right_layout .top_anchor a {
   font-size: 14px;
   color: #DE89A3;
 }
@@ -1201,6 +1210,7 @@ section {
   background-color: #76B5E1;
   text-align: center;
   padding-top: 48.9px;
+  z-index: 100;
 }
 .fv .text {
   width: 100%;
@@ -1505,6 +1515,7 @@ section {
 }
 .sixth_v .right {
   margin-left: -49px;
+  margin-right: 21px;
 }
 .sixth_v .parag.left {
   margin-left: 21px;
