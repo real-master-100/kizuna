@@ -1798,6 +1798,13 @@ section {
   color: #EA97B0;
 }
 
+.rest_f, .rest_s {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: calc(50vw - 390.5px);
+}
+
 footer {
   background-color: #EA97B0;
   position: fixed;
