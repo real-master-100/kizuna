@@ -691,15 +691,11 @@ section {
         display: flex;
         flex-direction: row;
         margin-bottom: 37px;
-        div {
+        button {
             width: 133px;
             height: 36px;
-            background-color: #EA97B0;
-            // display: flex;
             position: relative;
             border-radius: 10px;
-            padding-top: 10px;
-
             &:first-child {
                 margin-right: 22px;
             }
@@ -709,22 +705,27 @@ section {
                 width: 39px;
                 height: 15px;
                 background-color: inherit;
-                // background-color: red;
                 bottom: 0px;
                 clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-                translate: 47px 50%;
+                translate: calc(-154%) 50%;
+                
             }
 
-            p {
                 font-size: 16px;
                 text-align: center;
                 color: #FFFFFF;
                 line-height: 1;
+
+            &.show {
+                background-color: #EA97B0;
+            }
+            &.hid {
+                background-color: #E0D3E3;
             }
         }
     }
 
-    .hundred {
+    #hundred, #family {
         max-width: 348px;
         & > div {
             width: 100%;

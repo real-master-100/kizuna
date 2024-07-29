@@ -1661,18 +1661,20 @@ section {
   flex-direction: row;
   margin-bottom: 37px;
 }
-.eighth_v .msg div {
+.eighth_v .msg button {
   width: 133px;
   height: 36px;
-  background-color: #EA97B0;
   position: relative;
   border-radius: 10px;
-  padding-top: 10px;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 1;
 }
-.eighth_v .msg div:first-child {
+.eighth_v .msg button:first-child {
   margin-right: 22px;
 }
-.eighth_v .msg div:after {
+.eighth_v .msg button:after {
   position: absolute;
   content: "";
   width: 39px;
@@ -1681,18 +1683,18 @@ section {
   bottom: 0px;
   -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
           clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-  translate: 47px 50%;
+  translate: -154% 50%;
 }
-.eighth_v .msg div p {
-  font-size: 16px;
-  text-align: center;
-  color: #FFFFFF;
-  line-height: 1;
+.eighth_v .msg button.show {
+  background-color: #EA97B0;
 }
-.eighth_v .hundred {
+.eighth_v .msg button.hid {
+  background-color: #E0D3E3;
+}
+.eighth_v #hundred, .eighth_v #family {
   max-width: 348px;
 }
-.eighth_v .hundred > div {
+.eighth_v #hundred > div, .eighth_v #family > div {
   width: 100%;
   padding: 23px 25px 30px;
   display: flex;
@@ -1703,39 +1705,39 @@ section {
   border-radius: 20px;
   margin-bottom: 10px;
 }
-.eighth_v .hundred > div .question {
+.eighth_v #hundred > div .question, .eighth_v #family > div .question {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.eighth_v .hundred > div .question > div.content {
+.eighth_v #hundred > div .question > div.content, .eighth_v #family > div .question > div.content {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.eighth_v .hundred > div .question > div.content img {
+.eighth_v #hundred > div .question > div.content img, .eighth_v #family > div .question > div.content img {
   margin-right: 10px;
 }
-.eighth_v .hundred > div .question > div.content p {
+.eighth_v #hundred > div .question > div.content p, .eighth_v #family > div .question > div.content p {
   width: 238px;
   line-height: 1.714;
   font-size: 14px;
 }
-.eighth_v .hundred > div .question > .btn > img:hover {
+.eighth_v #hundred > div .question > .btn > img:hover, .eighth_v #family > div .question > .btn > img:hover {
   cursor: pointer;
 }
-.eighth_v .hundred > div .answer {
+.eighth_v #hundred > div .answer, .eighth_v #family > div .answer {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   margin-top: 20px;
 }
-.eighth_v .hundred > div .answer img {
+.eighth_v #hundred > div .answer img, .eighth_v #family > div .answer img {
   margin-right: 10px;
 }
-.eighth_v .hundred > div .answer p {
+.eighth_v #hundred > div .answer p, .eighth_v #family > div .answer p {
   width: 210px;
   line-height: 1.714;
   font-size: 14px;
@@ -1819,18 +1821,19 @@ footer div {
   align-items: center;
   justify-content: center;
 }
-footer div h4 {
+footer div a h4 {
   font-size: 17px;
 }
-footer div .btn {
+footer div a .btn {
   position: absolute;
   right: 21px;
   background-color: #FFFFFF;
   width: 23.5px;
   height: 23.5px;
   border-radius: 50%;
+  bottom: 25px;
 }
-footer div img {
+footer div a img {
   position: absolute;
   top: 10.7px;
   left: 30.6px;

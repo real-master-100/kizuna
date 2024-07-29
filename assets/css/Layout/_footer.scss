@@ -21,26 +21,26 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        // position: fixed;
-        // bottom: 50px;
-
-        h4 {
-            font-size: 17px;
-        }
-
-        .btn {
-            position: absolute;
-            right: 21px;
-            background-color: #FFFFFF;
-            width: 23.5px;
-            height: 23.5px;
-            border-radius: 50%;
-        }
-
-        img {
-            position: absolute;
-            top: 10.7px;
-            left: 30.6px;
+        a  {
+            h4 {
+                font-size: 17px;
+            }
+    
+            .btn {
+                position: absolute;
+                right: 21px;
+                background-color: #FFFFFF;
+                width: 23.5px;
+                height: 23.5px;
+                border-radius: 50%;
+                bottom: 25px;
+            }
+    
+            img {
+                position: absolute;
+                top: 10.7px;
+                left: 30.6px;
+            }
         }
     }
     // @include media('sp') {

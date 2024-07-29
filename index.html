@@ -9,6 +9,7 @@
     <script src="./assets/scroll-fadein.js"></script>
     <script src="./assets/show_bottom.js"></script>
     <script src="./assets/accordion.js"></script>
+    <script src="./assets/faq_toggle.js"></script>
     <!-- <link rel="stylesheet" href="./assets/css/common/animate.css"> -->
 </head>
 <body>
@@ -197,11 +198,12 @@
         <section class="eighth_v">
             <h5 class="fadein">よくあるご質問</h5>
             <div class="msg fadein">
-                <div><p>100＋1の質問</p> </div>
-                <div><p>家系図制作</p></div>
+                <button class="show que_btn">100＋1の質問</button>
+                <button class="hid fam_btn">家系図制作</button>
             </div>
 
-            <div class="hundred">
+            <div id="hundred">
+                
                 <div class="fadein">
                     <div class="question">
                         <div class="content">
@@ -221,7 +223,6 @@
                     </div>
                 </div>
                 
-                
                 <div class="fadein">
                     <div class="question">
                         <div class="content">
@@ -240,7 +241,6 @@
                     </div>
                 </div>
 
-
                 <div class="fadein">
                     <div class="question">
                         <div class="content">
@@ -258,6 +258,7 @@
                         <p>流れ、対面、電話、オンラインなどの形式の説明・・・・</p>
                     </div>
                 </div>
+
                 <div class="fadein">
                     <div class="question">
                         <div class="content">
@@ -274,7 +275,6 @@
                         <p>流れ、対面、電話、オンラインなどの形式の説明・・・・</p>
                     </div>
                 </div>
-                
                 
                 <div class="fadein">
                     <div class="question">
@@ -294,10 +294,29 @@
                     </div>
                 </div>
 
-
             </div>
 
-            <div class="family">
+            <div id="family">
+               
+                <div class="fadein">
+                    <div class="question">
+                        <div class="content">
+                            <img src="./assets/image/seventh_v/q_mark.svg" alt="qustion_mark">
+                            <p>family 制作期間について詳しく <br />
+                                知りたいです。</p> 
+                        </div>
+                        <div class="btn">
+                            <img src="./assets/image/seventh_v/spread_minus.svg" alt="spread_minus"  class="close">
+                        </div>
+                        <!-- <img src="./assets/image/seventh_v/spread_plus.svg" alt="spread_plus" class="open"> -->
+                    </div>
+                    <div class="answer">
+                        <img src="./assets/image/seventh_v/a_mark.svg" alt="">
+                        <p>family制作期間についての<br />
+                            説明・・・・<br />
+                            ・・・・・・・・・・・・</p>
+                    </div>
+                </div>
 
             </div>
         </section>
@@ -334,12 +353,14 @@
     
     <footer>
         <div>
-            <h4>お問い合わせはこちら</h4>
-            <div class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8.019" height="12.885" viewBox="0 0 8.019 12.885">
-                    <path id="Path_139" data-name="Path 139" d="M3163.646,296.722l-1.145-1.145h0l-4.865-4.866a.432.432,0,0,0-.611,0l-1.145,1.145a.432.432,0,0,0,0,.611l4.561,4.561-4.561,4.561a.432.432,0,0,0,0,.611l1.145,1.145a.432.432,0,0,0,.611,0l4.866-4.866h0l1.145-1.145A.432.432,0,0,0,3163.646,296.722Z" transform="translate(-3155.753 -290.585)" fill="#ea97b0"/>
-                </svg>
-            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUvgk14aLAcKhaRpvAfbhCh2ZYPXCZ7Sk31EHqsEaVBrklWg/viewform?usp=pp_url" target="_blank">
+                <h4>お問い合わせはこちら</h4>
+                <div class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8.019" height="12.885" viewBox="0 0 8.019 12.885">
+                        <path id="Path_139" data-name="Path 139" d="M3163.646,296.722l-1.145-1.145h0l-4.865-4.866a.432.432,0,0,0-.611,0l-1.145,1.145a.432.432,0,0,0,0,.611l4.561,4.561-4.561,4.561a.432.432,0,0,0,0,.611l1.145,1.145a.432.432,0,0,0,.611,0l4.866-4.866h0l1.145-1.145A.432.432,0,0,0,3163.646,296.722Z" transform="translate(-3155.753 -290.585)" fill="#ea97b0"/>
+                    </svg>
+                </div>
+            </a>
         </div>
     </footer>
 
