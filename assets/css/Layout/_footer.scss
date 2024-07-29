@@ -12,8 +12,6 @@ footer {
     @include media('sp') {
         width: 100vw;
     }
-}
-
     div {
         color: #FFFFFF;
         background-color: #f32160;
@@ -53,6 +51,8 @@ footer {
             }
         }
     }
+}
+
     // @include media('sp') {
     //     margin-top: 67rem;
     // }
@@ -213,4 +213,4 @@ footer {
     //         font-size: 18rem;
     //     }
     // }
-}
+// }

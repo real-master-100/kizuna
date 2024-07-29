@@ -10,16 +10,19 @@
     <script src="./assets/show_bottom.js"></script>
     <script src="./assets/accordion.js"></script>
     <script src="./assets/faq_toggle.js"></script>
+    <script src="./assets/scroll_smooth.js"></script>
 </head>
 <body>
-    <div class="rest_f">
-        <div></div>
-        <div class="rest_md"></div>
-        <div></div>
+    <div class="bg_img">
+        <img src="./assets/image/header/bg.png" alt="">
+    </div>
+    <div class="left_layout">
+        <img src="./assets/image/header/left/top.svg" alt="">
+        <img src="./assets/image/header/left/bottom.svg" alt="">
     </div>
     
     <div class="shadow">
-
+        
         <section class="fv">
             <div class="bg">
                 <img src="./assets/image/Group_170.svg" alt="100質問">
@@ -98,7 +101,7 @@
         <div class="link23">
         </div>
 
-        <section class="third_v">
+        <section class="third_v" id="third">
             <img src="./assets/image/third_v/top_tilte.svg" alt="" class="top fadein">
             <img src="./assets/image/third_v/second_title.svg" alt="" class="fadein">
             <img src="./assets/image/third_v/illust.svg" alt="100+1" class="fadein">
@@ -153,7 +156,7 @@
             <div class="shape bottom"></div>
         </div>
 
-        <section class="sixth_v">
+        <section class="sixth_v" id="customer_feed">
             <div class="title">
                 <h2 class="main_title fadein">ご利用された</h2>
                 <h3 class="sub_title fadein">お客さまの声</h3>
@@ -209,7 +212,7 @@
         <div class="link67">
         </div>
 
-        <section class="seventh_v">
+        <section class="seventh_v" id="#follow">
             <h2 class="fadein">製作の流れ</h2>
             <img src="./assets/image/follow.svg" alt="follow" class="fadein">
         </section>
@@ -218,7 +221,7 @@
             <img src="./assets/image/link7_8.png" alt="">
         </div>
         
-        <section class="eighth_v">
+        <section class="eighth_v" id="ask_question">
             <h5 class="fadein">よくあるご質問</h5>
             <div class="msg fadein">
                 <button class="show que_btn">100＋1の質問</button>
@@ -365,20 +368,33 @@
             <p class="pink fourteen fadein"><span>＼</span>Googleフォームよりお問い合わせください<span>／</span></p>
         </section>
     
+        <div class="foot">
+            <div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUvgk14aLAcKhaRpvAfbhCh2ZYPXCZ7Sk31EHqsEaVBrklWg/viewform?usp=pp_url" target="_blank">
+                    <h4>お問い合わせはこちら</h4>
+                    <div class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8.019" height="12.885" viewBox="0 0 8.019 12.885">
+                            <path id="Path_139" data-name="Path 139" d="M3163.646,296.722l-1.145-1.145h0l-4.865-4.866a.432.432,0,0,0-.611,0l-1.145,1.145a.432.432,0,0,0,0,.611l4.561,4.561-4.561,4.561a.432.432,0,0,0,0,.611l1.145,1.145a.432.432,0,0,0,.611,0l4.866-4.866h0l1.145-1.145A.432.432,0,0,0,3163.646,296.722Z" transform="translate(-3155.753 -290.585)" fill="#ea97b0"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
     
-    <footer>
-        <div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUvgk14aLAcKhaRpvAfbhCh2ZYPXCZ7Sk31EHqsEaVBrklWg/viewform?usp=pp_url" target="_blank">
-                <h4>お問い合わせはこちら</h4>
-                <div class="btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8.019" height="12.885" viewBox="0 0 8.019 12.885">
-                        <path id="Path_139" data-name="Path 139" d="M3163.646,296.722l-1.145-1.145h0l-4.865-4.866a.432.432,0,0,0-.611,0l-1.145,1.145a.432.432,0,0,0,0,.611l4.561,4.561-4.561,4.561a.432.432,0,0,0,0,.611l1.145,1.145a.432.432,0,0,0,.611,0l4.866-4.866h0l1.145-1.145A.432.432,0,0,0,3163.646,296.722Z" transform="translate(-3155.753 -290.585)" fill="#ea97b0"/>
-                    </svg>
-                </div>
-            </a>
+    <div class="right_layout">
+        <div class="anchors">
+            <a href="#third"><img src="./assets/image/header/right/f_sen.png" alt=""><span>とは？</span></a>
+            <a href="">親家系図製作<span>とは？</span> </a>
+            <a href="#customer_feed">お客様の声 </a>
+            <a href="#follow">制作の流れ</a>
+            <a href="#ask_question">よくあるご質問</a>
         </div>
-    </footer>
+
+        <div class="top_anchor">
+
+        </div>
+    </div>
 
     <script src="/script.js"></script>
 </body>
