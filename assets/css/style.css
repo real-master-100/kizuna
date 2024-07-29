@@ -1156,6 +1156,11 @@ body .right_layout .anchors {
   flex-direction: column;
   gap: 26.4px;
 }
+@media print, screen and (max-width: 1280px) {
+  body .right_layout .anchors {
+    display: none;
+  }
+}
 body .right_layout a {
   display: flex;
   align-items: center;
@@ -1165,6 +1170,13 @@ body .right_layout a {
 }
 body .right_layout a span {
   font-size: 18px;
+}
+body .right_layout .top_anchor p {
+  position: fixed;
+  bottom: 32px;
+  right: 40px;
+  font-size: 14px;
+  color: #DE89A3;
 }
 
 section {
@@ -1680,6 +1692,10 @@ section {
   width: 392px;
   height: 80px;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  max-width: 392px;
+  min-width: 392px;
 }
 @media only screen and (max-width: 768px) {
   .foot {
