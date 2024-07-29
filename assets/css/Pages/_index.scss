@@ -379,7 +379,7 @@ section {
         margin-left: -49px;
     }
     .parag.left {
-        margin-left: 31px;
+        margin-left: 21px;
     }
 }
 
@@ -407,6 +407,7 @@ section {
     background-color: #DBEDF9;
     padding-bottom: 32px;
     padding-top: 3px;
+    margin-top: -1px;
     
     h5 {
         color: #505050;
@@ -427,6 +428,9 @@ section {
             text-align: center;
             color: #FFFFFF;
             line-height: 1;
+            // font-family: ;
+            font-family: 'Maru';
+
 
             &:first-child {
                 margin-right: 22px;

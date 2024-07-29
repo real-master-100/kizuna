@@ -1625,7 +1625,7 @@ section {
   margin-left: -49px;
 }
 .sixth_v .parag.left {
-  margin-left: 31px;
+  margin-left: 21px;
 }
 
 .seventh_v {
@@ -1651,6 +1651,7 @@ section {
   background-color: #DBEDF9;
   padding-bottom: 32px;
   padding-top: 3px;
+  margin-top: -1px;
 }
 .eighth_v h5 {
   color: #505050;
@@ -1671,6 +1672,7 @@ section {
   text-align: center;
   color: #FFFFFF;
   line-height: 1;
+  font-family: "Maru";
 }
 .eighth_v .msg button:first-child {
   margin-right: 22px;
