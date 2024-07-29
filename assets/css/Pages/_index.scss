@@ -23,6 +23,7 @@ transform: translate(0, 0);
 }
 body {
     // background-image:url("./../image/header/bg.png");
+    background-color: #FFF2F6;
     display: flex;
     justify-content: space-between;
     
@@ -133,6 +134,7 @@ section {
         background-size: cover;
         color: #ffffff;
         z-index: 101;
+        margin-top: -1px;
         p {
             text-shadow: #76B5E1, 0,3,6px;
             font-size: 32px;
