@@ -1128,7 +1128,7 @@ body .rest {
   height: auto;
 }
 body .shadow {
-  box-shadow: 0px 0px 60px rgba(180, 57, 65, 0.7725490196);
+  box-shadow: 0px 0px 10px rgba(247, 173, 195, 0.5058823529);
   margin: auto;
 }
 body .left_layout {
@@ -1182,6 +1182,11 @@ body .right_layout .top_anchor {
   position: fixed;
   bottom: 32px;
   right: 40px;
+}
+@media only screen and (max-width: 768px) {
+  body .right_layout .top_anchor {
+    width: 100vw;
+  }
 }
 body .right_layout .top_anchor a {
   font-size: 14px;
