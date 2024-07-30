@@ -1124,7 +1124,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
-  justify-content: space-between;
 }
 body .rest {
   background-color: #7EBAE4;
@@ -1132,52 +1131,68 @@ body .rest {
 }
 body .shadow {
   box-shadow: 0px 0px 10px rgba(247, 173, 195, 0.5058823529);
-  margin: auto;
+  margin: 0 auto;
 }
-body .left_layout {
+body #wrap_left {
   position: fixed;
   display: flex;
   flex-direction: column;
-  gap: 62.1px;
   align-items: center;
+  width: calc(50vw - 195px);
   bottom: 0px;
 }
+body #wrap_left .left_layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 62.1px;
+}
 @media print, screen and (max-width: 1280px) {
-  body .left_layout {
+  body #wrap_left .left_layout {
     display: none;
   }
 }
-body .left_layout:nth-child(2) {
-  width: 64%;
+body #wrap_left .left_layout .first {
+  width: 80%;
 }
-body .right_layout {
+body #wrap_left .left_layout .second {
+  width: 90%;
+}
+body #wrap_right {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(50vw - 195px);
+}
+body #wrap_right .right_layout {
   position: fixed;
   top: calc(50vh - 116px);
   right: calc((50vw - 447.3px) / 2);
   display: flex;
   flex-direction: column;
 }
-body .right_layout .anchors {
+body #wrap_right .right_layout .anchors {
   display: flex;
   flex-direction: column;
   gap: 26.4px;
 }
 @media print, screen and (max-width: 1280px) {
-  body .right_layout .anchors {
+  body #wrap_right .right_layout .anchors {
     display: none;
   }
 }
-body .right_layout .anchors a {
+body #wrap_right .right_layout .anchors a {
   display: flex;
   align-items: center;
   font-size: 22px;
   line-height: 1.772;
   color: #505050;
 }
-body .right_layout .anchors a span {
+body #wrap_right .right_layout .anchors a span {
   font-size: 18px;
 }
-body .right_layout .top_anchor {
+body #wrap_right .right_layout .top_anchor {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1186,7 +1201,12 @@ body .right_layout .top_anchor {
   bottom: 32px;
   right: 40px;
 }
-body .right_layout .top_anchor a {
+@media only screen and (max-width: 768px) {
+  body #wrap_right .right_layout .top_anchor {
+    display: none;
+  }
+}
+body #wrap_right .right_layout .top_anchor a {
   font-size: 14px;
   color: #DE89A3;
 }
@@ -1778,22 +1798,6 @@ section {
   position: absolute;
   top: 10.7px;
   left: 30.6px;
-}
-
-#wrap_right {
-  width: calc(50vw - 195.25px);
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#wrap_left {
-  width: calc(50vw - 195.25px);
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 footer {
