@@ -1213,7 +1213,7 @@ body #wrap_right .right_layout .top_anchor {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: -15px;
   position: fixed;
   bottom: 32px;
   right: 40px;
@@ -1229,6 +1229,7 @@ body #wrap_right .right_layout .top_anchor:hover {
 body #wrap_right .right_layout .top_anchor p {
   font-size: 14px;
   color: #DE89A3;
+  line-height: 2.2;
 }
 
 section {
