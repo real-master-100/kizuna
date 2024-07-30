@@ -83,4 +83,12 @@
         });
       } // End if
     });
+
+    $("#change_color").mouseover(function() {
+      $(this).find("img").attr("src", "./assets/image/header/right/nav_pink.svg"); // Embrace the change of src attribute upon the link's hover [[1]](https://poe.com/citation?message_id=225075848726&citation=1).
+    }).mouseleave(function() {
+      $(this).find("img").attr("src", "./assets/image/header/right/nav_black.svg"); // Embrace the return to the original src attribute upon the departure of the mouse [[1]](https://poe.com/citation?message_id=225076609558&citation=1).
+    });
+
+    // $("#change_color")
   });
