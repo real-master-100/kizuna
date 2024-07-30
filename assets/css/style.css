@@ -1338,27 +1338,63 @@ section {
   justify-content: flex-start;
   margin-bottom: -1px;
 }
-.second_v p {
-  line-height: 1.3;
-  color: #505050;
-}
-.second_v img.sv_1 {
+.second_v .wrap_sv_1 {
   position: absolute;
   top: 4.6px;
   left: -7px;
   z-index: 2;
+  width: 151.25px;
+  height: 121px;
 }
-.second_v img.sv_2 {
+.second_v .wrap_sv_1 img {
+  height: 121px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.second_v .wrap_sv_2 {
   position: absolute;
   top: 10.6px;
   right: -9px;
   z-index: 2;
+  width: 194.16px;
+  text-align: center;
 }
-.second_v img.sv_3 {
+.second_v .wrap_sv_2 img {
+  border-radius: 20px;
+  height: 193.02px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second_v .wrap_sv_3 {
   position: absolute;
   top: 115.1px;
-  left: 65px;
+  left: 50px;
   z-index: 1;
+  width: 128px;
+  height: 111px;
+  text-align: center;
+}
+.second_v .wrap_sv_3 img {
+  border-radius: 20px;
+  height: 111px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second_v .wrap_sv_4 {
+  width: 288px;
+  height: 150px;
+}
+.second_v .wrap_sv_4 img {
+  border-radius: 20px;
+  width: 288px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second_v p {
+  line-height: 1.3;
+  color: #505050;
 }
 .second_v img.sv_center_pic {
   position: absolute;
@@ -1496,8 +1532,17 @@ section {
   color: #DE89A3;
   font-size: 28px;
 }
-.fivth_v img {
+.fivth_v .wrap_sv_4 {
+  width: 288px;
+  height: 150px;
   margin-bottom: 16px;
+}
+.fivth_v .wrap_sv_4 img {
+  border-radius: 20px;
+  width: 288px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .fivth_v div p {
   font-size: 16px;
@@ -1692,7 +1737,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 .eighth_v #hundred > div .question > div.content div.img_wrap, .eighth_v #family > div .question > div.content div.img_wrap {
   width: 18px;
@@ -1711,6 +1756,7 @@ section {
   width: 238px;
   line-height: 1.714;
   font-size: 14px;
+  margin-left: 10px;
 }
 .eighth_v #hundred > div .question > .btn > img:hover, .eighth_v #family > div .question > .btn > img:hover {
   cursor: pointer;
@@ -1803,8 +1849,8 @@ section {
   z-index: 1000;
   display: flex;
   align-items: center;
-  max-width: 392px;
-  min-width: 392px;
+  max-width: 375px;
+  min-width: 375px;
 }
 @media only screen and (max-width: 768px) {
   .foot {
