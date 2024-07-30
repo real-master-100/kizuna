@@ -1166,6 +1166,9 @@ body #wrap_right {
   align-items: center;
   width: calc(50vw - 195px);
 }
+body #wrap_right:hover {
+  background-color: #f01111;
+}
 body #wrap_right .right_layout {
   position: fixed;
   top: calc(50vh - 116px);
@@ -1201,6 +1204,9 @@ body #wrap_right .right_layout .top_anchor {
   position: fixed;
   bottom: 32px;
   right: 40px;
+}
+body #wrap_right .right_layout .top_anchor:hover {
+  color: #76B5E1;
 }
 @media only screen and (max-width: 768px) {
   body #wrap_right .right_layout .top_anchor {
