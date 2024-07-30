@@ -1154,6 +1154,7 @@ body #wrap_left .left_layout {
 }
 body #wrap_left .left_layout .first {
   height: 37vh;
+  aspect-ratio: 1/1;
 }
 body #wrap_left .left_layout .second {
   height: 53vh;
@@ -1653,11 +1654,17 @@ section {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.eighth_v #hundred > div .question > div.content img, .eighth_v #family > div .question > div.content img {
-  margin-right: 10px;
+.eighth_v #hundred > div .question > div.content div.img_wrap, .eighth_v #family > div .question > div.content div.img_wrap {
+  width: 18px;
+  height: 18px;
 }
-.eighth_v #hundred > div .question > div.content img:hover, .eighth_v #family > div .question > div.content img:hover {
-  width: 110%;
+.eighth_v #hundred > div .question > div.content div.img_wrap:hover, .eighth_v #family > div .question > div.content div.img_wrap:hover {
+  width: 23px;
+  height: 23px;
+}
+.eighth_v #hundred > div .question > div.content div.img_wrap img, .eighth_v #family > div .question > div.content div.img_wrap img {
+  margin-right: 10px;
+  width: 100%;
 }
 .eighth_v #hundred > div .question > div.content p, .eighth_v #family > div .question > div.content p {
   width: 238px;

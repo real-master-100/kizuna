@@ -57,6 +57,7 @@ body {
             }
             .first {
                 height: 37vh;
+                aspect-ratio: 1 / 1;
             }
             .second {
                 height: 53vh;
@@ -590,16 +591,24 @@ section {
                 justify-content: space-between;
                 align-items: center;
                 
-                &>div.content {
+                & > div.content {
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-start;
                     align-items: flex-start;
                     
-                    img {
-                        margin-right: 10px;
+                    div.img_wrap {
+                        width: 18px;
+                        height: 18px;
+                        
                         &:hover {
-                            width: 110%;
+                            width: 23px;
+                            height: 23px;
+                        }
+
+                        img {
+                            margin-right: 10px;
+                            width: 100%;
                         }
                     }
                     p {
