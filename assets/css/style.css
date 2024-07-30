@@ -1833,6 +1833,7 @@ section {
 .ninth_v .pink {
   display: inline-flex;
   width: 110%;
+  align-self: center;
 }
 .ninth_v .pink > span {
   color: #EA97B0;
