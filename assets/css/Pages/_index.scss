@@ -23,7 +23,9 @@ transform: translate(0, 0);
 }
 body {
     // background-image:url("./../image/header/bg.png");
-    background-image: linear-gradient(to bottom #FFF2F6 #FFFFFF);
+    background-image: linear-gradient(to bottom, #FFF2F6, #FFFFFF);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     justify-content: space-between;
     
@@ -153,12 +155,16 @@ section {
     background-image: url('./../image/link2_3.png');
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: 100;
 }
 
 .link34 {
     background-image: url('./../image/link3_4.png');
     height: 32px;
     width: 390.5px;
+    position: relative;
+    z-index: 100;
 }
 
 .link67 {
@@ -169,6 +175,8 @@ section {
     height: 37px;
     margin-top: -1px;
     margin-bottom: -2px;
+    position: relative;
+    z-index: 100;
 }
 
 .link89 {
@@ -179,10 +187,14 @@ section {
     background-repeat: no-repeat;
     margin-bottom: -2px;
     margin-top: -2px;
+    position: relative;
+    z-index: 100;
 }
 
 .link {
     width: 390.5px;
+    position: relative;
+    z-index: 100;
 }
 
 .second_v {
@@ -278,6 +290,8 @@ section {
     padding-bottom: 26.2px;
     margin-bottom: -1px;
     margin-top: -2px;
+    position: relative;
+    z-index: 100;
     .top {
         margin-bottom: 10px;
     }
@@ -296,6 +310,8 @@ section {
     padding-right: 51px;
     padding-bottom: 54px;
     background-color: #DBEDF9;
+    position: relative;
+    z-index: 100;
     .title {
         color: #70AFDB;
         font-size: 32px;
@@ -407,7 +423,8 @@ section {
     flex-direction: column;
     background-color: #FEECF1;
     padding-top: 10px;
-    
+    position: relative;
+    z-index: 100;
     .title {
         display: flex;
         flex-direction: column;
@@ -492,6 +509,8 @@ section {
     padding-bottom: 32px;
     padding-top: 3px;
     margin-top: -1px;
+    position: relative;
+    z-index: 100;
     
     h5 {
         color: #505050;
@@ -605,6 +624,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+    z-index: 100;
 
     img {
         margin-bottom: 45.3px;
