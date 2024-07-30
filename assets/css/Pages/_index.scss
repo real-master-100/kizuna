@@ -115,7 +115,7 @@ body {
                 @include media('sp') {
                     display: none;
                 }
-                a {
+                p {
                     font-size: 14px;
                     color: #DE89A3;
                 }
@@ -604,6 +604,7 @@ section {
                         &:hover {
                             width: 23px;
                             height: 23px;
+                            background-color: red;
                         }
 
                         img {

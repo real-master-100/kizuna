@@ -1207,7 +1207,7 @@ body #wrap_right .right_layout .top_anchor {
     display: none;
   }
 }
-body #wrap_right .right_layout .top_anchor a {
+body #wrap_right .right_layout .top_anchor p {
   font-size: 14px;
   color: #DE89A3;
 }
@@ -1661,6 +1661,7 @@ section {
 .eighth_v #hundred > div .question > div.content div.img_wrap:hover, .eighth_v #family > div .question > div.content div.img_wrap:hover {
   width: 23px;
   height: 23px;
+  background-color: red;
 }
 .eighth_v #hundred > div .question > div.content div.img_wrap img, .eighth_v #family > div .question > div.content div.img_wrap img {
   margin-right: 10px;
