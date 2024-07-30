@@ -1120,6 +1120,7 @@ header .nav div a span {
 }
 
 body {
+  background-image: linear-gradient(to bottom #FFF2F6 #FFFFFF);
   display: flex;
   justify-content: space-between;
 }
@@ -1164,14 +1165,14 @@ body .right_layout .anchors {
     display: none;
   }
 }
-body .right_layout a {
+body .right_layout .anchors a {
   display: flex;
   align-items: center;
   font-size: 22px;
   line-height: 1.772;
   color: #505050;
 }
-body .right_layout a span {
+body .right_layout .anchors a span {
   font-size: 18px;
 }
 body .right_layout .top_anchor {
@@ -1182,11 +1183,6 @@ body .right_layout .top_anchor {
   position: fixed;
   bottom: 32px;
   right: 40px;
-}
-@media only screen and (max-width: 768px) {
-  body .right_layout .top_anchor {
-    width: 100vw;
-  }
 }
 body .right_layout .top_anchor a {
   font-size: 14px;
@@ -1225,6 +1221,7 @@ section {
   background-size: cover;
   color: #ffffff;
   z-index: 101;
+  margin-top: -1px;
 }
 .fv .text p {
   text-shadow: #76B5E1, 0, 3, 6px;
@@ -1275,7 +1272,7 @@ section {
   width: 100%;
   height: auto;
   padding-top: 251px;
-  padding-bottom: 54px;
+  padding-bottom: 68px;
   background-image: url("./../image/sv_bg.svg");
   background-color: #FEECF1;
   background-repeat: no-repeat;
@@ -1356,7 +1353,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 14.5px;
+  padding-top: 49.5px;
   padding-left: 51px;
   padding-right: 51px;
   padding-bottom: 26.2px;
@@ -1378,7 +1375,7 @@ section {
   padding-top: 55.3px;
   padding-left: 51px;
   padding-right: 51px;
-  padding-bottom: 52px;
+  padding-bottom: 54px;
   background-color: #DBEDF9;
 }
 .fourth_v .title {
@@ -1411,7 +1408,8 @@ section {
 }
 
 .fivth_v {
-  padding-top: 14.5px;
+  padding-top: 45.5px;
+  padding-bottom: 14px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1478,6 +1476,7 @@ section {
   display: flex;
   flex-direction: column;
   background-color: #FEECF1;
+  padding-top: 10px;
 }
 .sixth_v .title {
   display: flex;
@@ -1538,7 +1537,7 @@ section {
   width: 100%;
 }
 .seventh_v h2 {
-  color: #EA97B0;
+  color: #505050;
   font-size: 32px;
 }
 
@@ -1571,6 +1570,7 @@ section {
   color: #FFFFFF;
   line-height: 1;
   font-family: "Maru";
+  transition: background-color, 0.4s;
 }
 .eighth_v .msg button:first-child {
   margin-right: 22px;
@@ -1620,6 +1620,9 @@ section {
 }
 .eighth_v #hundred > div .question > div.content img, .eighth_v #family > div .question > div.content img {
   margin-right: 10px;
+}
+.eighth_v #hundred > div .question > div.content img:hover, .eighth_v #family > div .question > div.content img:hover {
+  width: 110%;
 }
 .eighth_v #hundred > div .question > div.content p, .eighth_v #family > div .question > div.content p {
   width: 238px;
