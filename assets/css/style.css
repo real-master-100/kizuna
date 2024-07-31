@@ -1712,6 +1712,7 @@ section {
 }
 .eighth_v .msg button.hid {
   background-color: #E0D3E3;
+  display: none;
 }
 .eighth_v #hundred, .eighth_v #family {
   max-width: 348px;
