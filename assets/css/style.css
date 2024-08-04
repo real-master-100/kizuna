@@ -1658,6 +1658,16 @@ section {
 .seventh_v h2 {
   color: #505050;
   font-size: 32px;
+  margin-bottom: 30.7px;
+}
+.seventh_v p {
+  font-size: 14px;
+  color: #505050;
+  line-height: 1.857;
+  margin-bottom: 39px;
+}
+.seventh_v img {
+  margin-bottom: 50px;
 }
 
 .eighth_v {
