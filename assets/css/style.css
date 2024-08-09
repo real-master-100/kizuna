@@ -1838,7 +1838,13 @@ section {
   margin-bottom: 25px;
 }
 .ninth_v .last {
-  margin-bottom: 55px;
+  margin-bottom: 35px;
+}
+.ninth_v a.terms {
+  margin-bottom: 20px;
+}
+.ninth_v a.policy {
+  margin-bottom: 66px;
 }
 .ninth_v .pink {
   display: inline-flex;

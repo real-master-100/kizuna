@@ -723,7 +723,6 @@ section {
             }
             &.hid {
                 background-color: #E0D3E3;
-                // display: none;
             }
         }
     }
@@ -857,7 +856,14 @@ section {
         margin-bottom: 25px;
     }
     .last {
-        margin-bottom: 55px;
+        margin-bottom: 35px;
+    }
+    a.terms {
+        margin-bottom: 20px;
+    }
+
+    a.policy {
+        margin-bottom: 66px;
     }
 
     .pink {
