@@ -459,7 +459,7 @@ section {
     padding-top: 55.3px;
     padding-left: 51px;
     padding-right: 51px;
-    padding-bottom: 54px;
+    padding-bottom: 100px;
     background-color: #DBEDF9;
     position: relative;
     z-index: 100;
@@ -471,29 +471,32 @@ section {
         flex-direction: row;
         align-items: center;
 
-        margin-bottom: 22.8px;
+        margin-bottom: 60px;
         span{
             color: #505050;
             font-size: 23px;
         }
     }
 
-    .f_text {
-        font-size: 14px;
-        line-height: 1.857;
-        margin-bottom: 21.4px;
-        span {
-            font-weight: bold;
-        }
+    .pre {
+        font-size: 23px;
     }
+    // .f_text {
+    //     font-size: 14px;
+    //     line-height: 1.857;
+    //     margin-bottom: 21.4px;
+    //     span {
+    //         font-weight: bold;
+    //     }
+    // }
     
-    img {
-        margin-bottom: 20px;
-    }
-    .s_text {
-        font-size: 14px;
-        line-height: 1.857;
-    }
+    // img {
+    //     margin-bottom: 20px;
+    // }
+    // .s_text {
+    //     font-size: 14px;
+    //     line-height: 1.857;
+    // }
 }
 
 .fivth_v {
